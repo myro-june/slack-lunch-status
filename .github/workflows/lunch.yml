@@ -2,8 +2,8 @@ name: Lunch Status
 
 on:
   schedule:
-      - cron: '0 5 * * 1-5'  # UTC 05:00 = KST 14:00, 평일만
-        workflow_dispatch:  # 수동 실행 가능
+          - cron: '0 5 * * 1-5'
+          workflow_dispatch:
 
         jobs:
           set-lunch:
