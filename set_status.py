@@ -4,7 +4,7 @@ import time
 
 SLACK_TOKEN = os.environ["SLACK_TOKEN"]
 
-expiration = int(time.time()) + (90 * 60) # 현재시각 + 90분(1시간30분)
+expiration = int(time.time()) + (60 * 60) # 현재시각 + 60분(1시간)
 
 payload = {
       "profile": {
